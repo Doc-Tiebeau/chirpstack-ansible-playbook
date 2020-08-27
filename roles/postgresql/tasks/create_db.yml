@@ -4,6 +4,7 @@
     password: "{{ item.password }}"
     role_attr_flags: LOGIN
   become_user: postgres
+  no_log: yes
 
 - name: create database
   postgresql_db:
