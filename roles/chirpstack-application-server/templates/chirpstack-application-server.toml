@@ -2,12 +2,12 @@
 # configuration example and documentation.
 
 [postgresql]
-dsn="postgres://chirpstack_as:chirpstack_as@localhost/chirpstack_as?sslmode=disable"
+dsn="postgres://chirpstack_as:{{ chirpstack_application_server.mosquitto_pwd | urlencode }}@localhost/chirpstack_as?sslmode=disable"
 
 [application_server.integration.mqtt]
 server="tcp://localhost:1883"
 username="chirpstack_as"
-password="chirpstack_as"
+password="{{ chirpstack_application_server.postgres_pwd }}"
 
 [application_server.external_api]
 bind="0.0.0.0:8080"

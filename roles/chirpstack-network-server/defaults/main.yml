@@ -1,5 +1,8 @@
 ---
 
+chirpstack_network_server_mosquitto_pwd: chirpstack_ns
+chirpstack_network_server_postgres_pwd: chirpstack_ns
+
 chirpstack_network_server_band: "EU_863_870"
 
 chirpstack_network_server_extra_channels: |2

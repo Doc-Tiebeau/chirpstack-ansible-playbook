@@ -1,0 +1,4 @@
+---
+
+chirpstack_gateway_bridge:
+  mosquitto_pwd: chirpstack_gw
