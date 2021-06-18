@@ -1,0 +1,13 @@
+---
+
+postgresql:
+  databases:
+    -
+      name: chirpstack_as
+      user: chirpstack_as
+      password: chirpstack_as
+    -
+      name: chirpstack_ns
+      user: chirpstack_ns
+      password: chirpstack_ns
+

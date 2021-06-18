@@ -1,0 +1,9 @@
+---
+
+chirpstack_application_server:
+  mosquitto_pwd: chirpstack_as
+  postgres_pwd: chirpstack_as
+  fqdn: localhost
+  letsencrypt:
+    email: info@example.com
+    request: false

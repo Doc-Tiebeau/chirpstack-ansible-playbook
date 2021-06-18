@@ -1,7 +1,7 @@
 - name: upgrade installed packages
   apt:
     update_cache: yes
-    upgrade: yes
+    upgrade: 'yes'
 
 - name: install packages
   package: name={{ item }} state=latest
@@ -19,3 +19,4 @@
 - name: add ChirpStack deb repository
   apt_repository:
     repo: deb https://artifacts.chirpstack.io/packages/3.x/deb stable main
+    mode: '666'
