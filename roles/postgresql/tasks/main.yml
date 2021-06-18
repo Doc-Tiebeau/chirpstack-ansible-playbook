@@ -1,7 +1,9 @@
 - name: install packages
   package: name={{ item }} state=latest
   with_items:
+    - python3-psycopg2
     - python-psycopg2
+    - python3-psycopg2
     - postgresql
 
 - name: start postgresql on boot

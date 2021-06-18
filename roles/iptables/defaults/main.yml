@@ -1,0 +1,28 @@
+---
+
+iptables:
+  accept:
+    -
+      port: 22
+      source: 0.0.0.0/0
+      protocol: tcp
+    -
+      port: 80
+      source: 0.0.0.0/0
+      protocol: tcp
+    -
+      port: 1883
+      source: 0.0.0.0/0
+      protocol: tcp
+    -
+      port: 1884
+      source: 0.0.0.0/0
+      protocol: tcp
+    -
+      port: 8080
+      source: 0.0.0.0/0
+      protocol: tcp
+    -
+      port: 1700
+      source: 0.0.0.0/0
+      protocol: udp

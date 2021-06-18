@@ -21,6 +21,7 @@
   template:
     src: chirpstack-application-server.nginx
     dest: /etc/nginx/sites-enabled/chirpstack-application-server
+    mode: 666
   notify:
     - reload nginx
 
